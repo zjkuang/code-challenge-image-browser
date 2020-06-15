@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  JKCSNavigationViewController.swift
 //  Practice001
 //
 //  Created by Zhengqian Kuang on 2020-06-13.
@@ -8,14 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class JKCSNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .white
+        
+        setup()
+    }
+    
+    func setup() {
+        
     }
 
-
 }
-

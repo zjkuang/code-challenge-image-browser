@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "JKCSSwift",
+        "repositoryURL": "https://github.com/zjkuang/JKCSSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "8526b0600fef02e307402e45f207e7d88c0b5917",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
