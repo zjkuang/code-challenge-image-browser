@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JKCSImageServiceSwift
 
 class JKCSImageDetailViewModel: NSObject {
     @objc dynamic var showLoadImageActivityIndicator: Bool = false

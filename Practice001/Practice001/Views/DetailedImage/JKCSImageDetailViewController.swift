@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JKCSImageServiceSwift
 
 class JKCSImageDetailViewController: JKCSViewController {
     

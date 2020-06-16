@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "JKCSImageServiceSwift",
+        "repositoryURL": "https://github.com/zjkuang/JKCSImageServiceSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "e182173cd0a22bfc786f4037f9573d6c990603d5",
+          "version": "1.0.1"
+        }
+      },
+      {
         "package": "JKCSSwift",
         "repositoryURL": "https://github.com/zjkuang/JKCSSwift.git",
         "state": {
           "branch": null,
-          "revision": "8526b0600fef02e307402e45f207e7d88c0b5917",
-          "version": "1.0.2"
+          "revision": "cd7e240cd44b218212f55b0e05b9183c4af4015f",
+          "version": "1.0.3"
         }
       }
     ]
