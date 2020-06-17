@@ -66,7 +66,7 @@ class JKCSImageListViewController: JKCSViewController {
     
     private func updateViewTitle() {
         let title = viewModel.currentImageDataSource().rawValue
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 60, height: 40))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 90, height: 40))
         label.textAlignment = .center
         label.text = title
         setNavigationBarTitleView(titleView: label)

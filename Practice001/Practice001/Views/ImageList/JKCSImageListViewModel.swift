@@ -28,6 +28,8 @@ class JKCSImageListViewModel: NSObject {
             imageService = JKCSFlickr()
         case .Imgur:
             imageService = JKCSImgur()
+        case .Unsplash:
+            imageService = JKCSUnsplash()
         }
         imageDataSourceSwitched = true
         if term.count > 0 {

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		520AE9BC2498494C009A5E77 /* JKCSImageServiceSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 520AE9BB2498494C009A5E77 /* JKCSImageServiceSwift */; };
+		520AE9E2249A5FBA009A5E77 /* JKCSUnsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9E1249A5FBA009A5E77 /* JKCSUnsplash.swift */; };
+		520AE9E4249A65DD009A5E77 /* JKCSUnsplashImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9E3249A65DD009A5E77 /* JKCSUnsplashImage.swift */; };
 		52458EA72495286D00931728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52458EA62495286D00931728 /* AppDelegate.swift */; };
 		52458EA92495286D00931728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52458EA82495286D00931728 /* SceneDelegate.swift */; };
 		52458EB02495286E00931728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52458EAF2495286E00931728 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520AE9E1249A5FBA009A5E77 /* JKCSUnsplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCSUnsplash.swift; sourceTree = "<group>"; };
+		520AE9E3249A65DD009A5E77 /* JKCSUnsplashImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCSUnsplashImage.swift; sourceTree = "<group>"; };
 		52458EA32495286D00931728 /* JKCSImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKCSImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52458EA62495286D00931728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52458EA82495286D00931728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520AE9DE249A5F83009A5E77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				520AE9E1249A5FBA009A5E77 /* JKCSUnsplash.swift */,
+				520AE9E3249A65DD009A5E77 /* JKCSUnsplashImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		52458E9A2495286D00931728 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +132,7 @@
 		52458EA52495286D00931728 /* Practice001 */ = {
 			isa = PBXGroup;
 			children = (
+				520AE9DE249A5F83009A5E77 /* Models */,
 				52458EDF2495328F00931728 /* Views */,
 				52458EA62495286D00931728 /* AppDelegate.swift */,
 				52458EA82495286D00931728 /* SceneDelegate.swift */,
@@ -341,6 +355,8 @@
 				52A17DBA2497B8DB00F312F8 /* JKCSImageListViewModel.swift in Sources */,
 				52A17DC02497B90D00F312F8 /* JKCSImageDetailViewModel.swift in Sources */,
 				52458EA72495286D00931728 /* AppDelegate.swift in Sources */,
+				520AE9E4249A65DD009A5E77 /* JKCSUnsplashImage.swift in Sources */,
+				520AE9E2249A5FBA009A5E77 /* JKCSUnsplash.swift in Sources */,
 				52458F2524954E8B00931728 /* JKCSNavigationViewController.swift in Sources */,
 				52A17DC42497B99700F312F8 /* JKCSImageListTableViewCell.swift in Sources */,
 				52458EA92495286D00931728 /* SceneDelegate.swift in Sources */,
@@ -669,7 +685,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSImageServiceSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.6;
+				minimumVersion = 1.0.8;
 			};
 		};
 		52458EDC2495328500931728 /* XCRemoteSwiftPackageReference "JKCSSwift" */ = {
@@ -677,7 +693,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				minimumVersion = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
