@@ -12,8 +12,8 @@ import JKCSImageServiceSwift
 class JKCSImageListViewModel: NSObject {
     @objc dynamic var showActivityIndicator: Bool = false
     @objc dynamic var reloadData: Bool = false
-    private var imageDataSourceType: JKCSImageDataSourceType = .Flickr
-    private var imageService: JKCSImageService = JKCSFlickr()
+    private var imageDataSourceType: JKCSImageDataSourceType = .Imgur
+    private var imageService: JKCSImageService = JKCSImgur()
     private var term: String = ""
     
     func switchImageDataSource(to type: JKCSImageDataSourceType) {
@@ -21,8 +21,8 @@ class JKCSImageListViewModel: NSObject {
         switch type {
         case .Flickr:
             imageService = JKCSFlickr()
-        // case <other>:
-            // ...
+        case .Imgur:
+            imageService = JKCSImgur()
         }
     }
     
