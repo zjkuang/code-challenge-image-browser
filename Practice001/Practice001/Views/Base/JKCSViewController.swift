@@ -17,10 +17,11 @@ class JKCSViewController: UIViewController {
     }
     
     func setup() {
-        let image = UIImage(named: "Logo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        imageView.image = image
-        setNavigationBarTitleView(titleView: imageView)
+        // Uniform navigation bar title
+//        let image = UIImage(named: "Logo")
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+//        imageView.image = image
+//        setNavigationBarTitleView(titleView: imageView)
     }
 
 }

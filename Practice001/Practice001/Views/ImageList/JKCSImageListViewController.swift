@@ -18,13 +18,15 @@ class JKCSImageListViewController: JKCSViewController {
     private var viewModel = JKCSImageListViewModel()
     private var showActivityIndicatorObservation: NSKeyValueObservation? // KVO
     private var reloadDataIndicatorObservation: NSKeyValueObservation? // KVO
+    private var imageDataSourceSwitchedObservation: NSKeyValueObservation? // KVO
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setKVO()
-        
         tableView.register(UINib(nibName: JKCSImageListTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: JKCSImageListTableViewCell.reuseId)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(switchTapped))
+        updateViewTitle()
     }
     
     private func setKVO() {
@@ -39,6 +41,11 @@ class JKCSImageListViewController: JKCSViewController {
         reloadDataIndicatorObservation = viewModel.observe(\JKCSImageListViewModel.reloadData, options: [.old, .new], changeHandler: { [weak self] (viewModel, change) in
             if change.newValue ?? false {
                 self?.tableView.reloadData()
+            }
+        })
+        imageDataSourceSwitchedObservation = viewModel.observe(\JKCSImageListViewModel.imageDataSourceSwitched, options: [.old, .new], changeHandler: { [weak self] (viewModel, change) in
+            if change.newValue ?? false {
+                self?.updateViewTitle()
             }
         })
     }
@@ -56,8 +63,22 @@ class JKCSImageListViewController: JKCSViewController {
         baseView.sendSubviewToBack(activityIndicatorView)
         view.isUserInteractionEnabled = true
     }
+    
+    private func updateViewTitle() {
+        let title = viewModel.currentImageDataSource().rawValue
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 60, height: 40))
+        label.textAlignment = .center
+        label.text = title
+        setNavigationBarTitleView(titleView: label)
+    }
+    
+    @objc private func switchTapped() {
+        viewModel.switchImageDataSource()
+    }
 
 }
+
+// MARK: - UISearchBarDelegate
 
 extension JKCSImageListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -65,6 +86,8 @@ extension JKCSImageListViewController: UISearchBarDelegate {
         viewModel.search(searchBar.text)
     }
 }
+
+// MARK: - UITableViewDataSource, UITableViewDelegate
 
 extension JKCSImageListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -82,6 +105,9 @@ extension JKCSImageListViewController: UITableViewDataSource, UITableViewDelegat
         if let thumbnailImageData = item.thumbnailImageData?.data {
             cell.thumbnailImageView.image = UIImage(data: thumbnailImageData)
         }
+        else {
+            cell.thumbnailImageView.image = UIImage(systemName: "photo")
+        }
         return cell
     }
     
@@ -93,6 +119,8 @@ extension JKCSImageListViewController: UITableViewDataSource, UITableViewDelegat
         navigationController?.pushViewController(imageDetailViewController, animated: true)
     }
 }
+
+// MARK: - UISrollViewDelegate
 
 extension JKCSImageListViewController {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

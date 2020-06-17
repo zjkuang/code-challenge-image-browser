@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		520AE9BC2498494C009A5E77 /* JKCSImageServiceSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 520AE9BB2498494C009A5E77 /* JKCSImageServiceSwift */; };
-		520AE9BF24991E51009A5E77 /* JKCSImgur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9BE24991E51009A5E77 /* JKCSImgur.swift */; };
-		520AE9C124991E64009A5E77 /* JKCSImgurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9C024991E64009A5E77 /* JKCSImgurImage.swift */; };
-		520AE9C624993E41009A5E77 /* _ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9C324993E41009A5E77 /* _ViewController.swift */; };
-		520AE9C724993E41009A5E77 /* _ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520AE9C424993E41009A5E77 /* _ViewModel.swift */; };
-		520AE9C824993E41009A5E77 /* _ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520AE9C524993E41009A5E77 /* _ViewController.xib */; };
 		52458EA72495286D00931728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52458EA62495286D00931728 /* AppDelegate.swift */; };
 		52458EA92495286D00931728 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52458EA82495286D00931728 /* SceneDelegate.swift */; };
 		52458EB02495286E00931728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52458EAF2495286E00931728 /* Assets.xcassets */; };
@@ -50,12 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		520AE9BE24991E51009A5E77 /* JKCSImgur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCSImgur.swift; sourceTree = "<group>"; };
-		520AE9C024991E64009A5E77 /* JKCSImgurImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKCSImgurImage.swift; sourceTree = "<group>"; };
-		520AE9C324993E41009A5E77 /* _ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _ViewController.swift; sourceTree = "<group>"; };
-		520AE9C424993E41009A5E77 /* _ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _ViewModel.swift; sourceTree = "<group>"; };
-		520AE9C524993E41009A5E77 /* _ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = _ViewController.xib; sourceTree = "<group>"; };
-		52458EA32495286D00931728 /* Practice001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice001.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52458EA32495286D00931728 /* JKCSImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKCSImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52458EA62495286D00931728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52458EA82495286D00931728 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52458EAF2495286E00931728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,25 +96,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		520AE9BD24991E1B009A5E77 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				520AE9BE24991E51009A5E77 /* JKCSImgur.swift */,
-				520AE9C024991E64009A5E77 /* JKCSImgurImage.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		520AE9C224993E31009A5E77 /* _ */ = {
-			isa = PBXGroup;
-			children = (
-				520AE9C324993E41009A5E77 /* _ViewController.swift */,
-				520AE9C424993E41009A5E77 /* _ViewModel.swift */,
-				520AE9C524993E41009A5E77 /* _ViewController.xib */,
-			);
-			path = _;
-			sourceTree = "<group>";
-		};
 		52458E9A2495286D00931728 = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +109,7 @@
 		52458EA42495286D00931728 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52458EA32495286D00931728 /* Practice001.app */,
+				52458EA32495286D00931728 /* JKCSImages.app */,
 				52458EB92495286E00931728 /* Practice001Tests.xctest */,
 				52458EC42495286E00931728 /* Practice001UITests.xctest */,
 			);
@@ -148,7 +119,6 @@
 		52458EA52495286D00931728 /* Practice001 */ = {
 			isa = PBXGroup;
 			children = (
-				520AE9BD24991E1B009A5E77 /* Models */,
 				52458EDF2495328F00931728 /* Views */,
 				52458EA62495286D00931728 /* AppDelegate.swift */,
 				52458EA82495286D00931728 /* SceneDelegate.swift */,
@@ -180,7 +150,6 @@
 		52458EDF2495328F00931728 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				520AE9C224993E31009A5E77 /* _ */,
 				52458F2124954E4200931728 /* Base */,
 				52458F3024959EEB00931728 /* ImageList */,
 				52458F3124959EFC00931728 /* DetailedImage */,
@@ -230,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52458EA22495286D00931728 /* Practice001 */ = {
+		52458EA22495286D00931728 /* JKCSImages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52458ECD2495286E00931728 /* Build configuration list for PBXNativeTarget "Practice001" */;
+			buildConfigurationList = 52458ECD2495286E00931728 /* Build configuration list for PBXNativeTarget "JKCSImages" */;
 			buildPhases = (
 				52458E9F2495286D00931728 /* Sources */,
 				52458EA02495286D00931728 /* Frameworks */,
@@ -242,13 +211,13 @@
 			);
 			dependencies = (
 			);
-			name = Practice001;
+			name = JKCSImages;
 			packageProductDependencies = (
 				52458EDD2495328500931728 /* JKCSSwift */,
 				520AE9BB2498494C009A5E77 /* JKCSImageServiceSwift */,
 			);
 			productName = Practice001;
-			productReference = 52458EA32495286D00931728 /* Practice001.app */;
+			productReference = 52458EA32495286D00931728 /* JKCSImages.app */;
 			productType = "com.apple.product-type.application";
 		};
 		52458EB82495286E00931728 /* Practice001Tests */ = {
@@ -327,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52458EA22495286D00931728 /* Practice001 */,
+				52458EA22495286D00931728 /* JKCSImages */,
 				52458EB82495286E00931728 /* Practice001Tests */,
 				52458EC32495286E00931728 /* Practice001UITests */,
 			);
@@ -341,7 +310,6 @@
 			files = (
 				52458EB32495286E00931728 /* LaunchScreen.storyboard in Resources */,
 				52A17DC12497B90D00F312F8 /* JKCSImageDetailViewController.xib in Resources */,
-				520AE9C824993E41009A5E77 /* _ViewController.xib in Resources */,
 				52A17DBB2497B8DB00F312F8 /* JKCSImageListViewController.xib in Resources */,
 				52458EB02495286E00931728 /* Assets.xcassets in Resources */,
 				52A17DC52497B99700F312F8 /* JKCSImageListTableViewCell.xib in Resources */,
@@ -371,16 +339,12 @@
 			files = (
 				52458F2324954E5500931728 /* JKCSViewController.swift in Sources */,
 				52A17DBA2497B8DB00F312F8 /* JKCSImageListViewModel.swift in Sources */,
-				520AE9C724993E41009A5E77 /* _ViewModel.swift in Sources */,
-				520AE9C124991E64009A5E77 /* JKCSImgurImage.swift in Sources */,
 				52A17DC02497B90D00F312F8 /* JKCSImageDetailViewModel.swift in Sources */,
 				52458EA72495286D00931728 /* AppDelegate.swift in Sources */,
 				52458F2524954E8B00931728 /* JKCSNavigationViewController.swift in Sources */,
-				520AE9BF24991E51009A5E77 /* JKCSImgur.swift in Sources */,
 				52A17DC42497B99700F312F8 /* JKCSImageListTableViewCell.swift in Sources */,
 				52458EA92495286D00931728 /* SceneDelegate.swift in Sources */,
 				52A17DBF2497B90D00F312F8 /* JKCSImageDetailViewController.swift in Sources */,
-				520AE9C624993E41009A5E77 /* _ViewController.swift in Sources */,
 				52A17DB92497B8DB00F312F8 /* JKCSImageListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,12 +370,12 @@
 /* Begin PBXTargetDependency section */
 		52458EBB2495286E00931728 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52458EA22495286D00931728 /* Practice001 */;
+			target = 52458EA22495286D00931728 /* JKCSImages */;
 			targetProxy = 52458EBA2495286E00931728 /* PBXContainerItemProxy */;
 		};
 		52458EC62495286E00931728 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52458EA22495286D00931728 /* Practice001 */;
+			target = 52458EA22495286D00931728 /* JKCSImages */;
 			targetProxy = 52458EC52495286E00931728 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -670,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52458ECD2495286E00931728 /* Build configuration list for PBXNativeTarget "Practice001" */ = {
+		52458ECD2495286E00931728 /* Build configuration list for PBXNativeTarget "JKCSImages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52458ECE2495286E00931728 /* Debug */,
@@ -705,7 +669,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSImageServiceSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.6;
 			};
 		};
 		52458EDC2495328500931728 /* XCRemoteSwiftPackageReference "JKCSSwift" */ = {
@@ -713,7 +677,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

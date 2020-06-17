@@ -62,18 +62,12 @@ class JKCSImageDetailViewController: JKCSViewController {
         })
         imageDataReadyObservation = viewModel.observe(\JKCSImageDetailViewModel.imageDataReady, options: [.old, .new], changeHandler: { [weak self] (viewModel, change) in
             if change.newValue ?? false {
-                if let imageData = self?.viewModel.image?.mediumImageData?.data {
-                    self?.imageView.image = UIImage(data: imageData)
-                }
+                self?.updateImage()
             }
         })
         imageInfoReadyObservation = viewModel.observe(\JKCSImageDetailViewModel.imageInfoReady, options: [.old, .new], changeHandler: { [weak self] (viewModel, change) in
             if change.newValue ?? false {
-                if let imageInfo = self?.viewModel.image?.info {
-                    self?.authorLabel.text = imageInfo.author
-                    self?.dateLabel.text = imageInfo.date
-                    self?.locationLabel.text = imageInfo.location
-                }
+                self?.updateImageInfo()
             }
         })
     }
@@ -94,6 +88,22 @@ class JKCSImageDetailViewController: JKCSViewController {
         activityIndicatorView.stopAnimating()
         activityIndicatorView.isHidden = true
         baseView.sendSubviewToBack(activityIndicatorView)
+    }
+    
+    private func updateImage() {
+        guard let data = viewModel.image?.mediumImageData?.data else {
+            return
+        }
+        imageView.image = UIImage(data: data)
+    }
+    
+    private func updateImageInfo() {
+        guard let imageInfo = viewModel.image?.info else {
+            return
+        }
+        authorLabel.text = imageInfo.author
+        dateLabel.text = imageInfo.date
+        locationLabel.text = imageInfo.location
     }
 
 }

@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/zjkuang/JKCSImageServiceSwift.git",
         "state": {
           "branch": null,
-          "revision": "3d2cba126b463f4ad949d7069191c08777e96c0c",
-          "version": "1.0.4"
+          "revision": "4a73f9b39a89e291e1e632228f83205e35660e42",
+          "version": "1.0.6"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/zjkuang/JKCSSwift.git",
         "state": {
           "branch": null,
-          "revision": "d22590cab5fa9fdbf3413e2f41efb311f11774df",
-          "version": "1.0.4"
+          "revision": "cb64e81ae3f07bfc49f7c624cf95af85b969a602",
+          "version": "1.0.5"
         }
       }
     ]
