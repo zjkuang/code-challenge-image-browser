@@ -13,8 +13,8 @@ class JKCSImageListViewModel: NSObject {
     @objc dynamic var showActivityIndicator: Bool = false
     @objc dynamic var reloadData: Bool = false
     @objc dynamic var imageDataSourceSwitched: Bool = false
-    private var imageDataSourceType: JKCSImageDataSourceType = .Flickr
-    private var imageService: JKCSImageService = JKCSFlickr()
+    private var imageDataSourceType: JKCSImageDataSourceType = .Unsplash
+    private var imageService: JKCSImageService = JKCSUnsplash()
     private var term: String = ""
     
     func currentImageDataSource() -> JKCSImageDataSourceType {
@@ -26,8 +26,6 @@ class JKCSImageListViewModel: NSObject {
         switch imageDataSourceType {
         case .Flickr:
             imageService = JKCSFlickr()
-        case .Imgur:
-            imageService = JKCSImgur()
         case .Unsplash:
             imageService = JKCSUnsplash()
         }

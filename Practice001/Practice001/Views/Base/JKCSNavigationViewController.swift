@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import JKCSSwift
 
 class JKCSNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setup()
     }
     
-    func setup() {
-        
+    override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
+        if UIDevice.current.isPad() {
+            if UIDevice.current.isLandscape() {
+                return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .regular), UITraitCollection.init(verticalSizeClass: .compact)])
+            }
+            else {
+                return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .compact), UITraitCollection.init(verticalSizeClass: .regular)])
+            }
+        }
+        return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .unspecified), UITraitCollection.init(verticalSizeClass: .unspecified)])
     }
 
 }

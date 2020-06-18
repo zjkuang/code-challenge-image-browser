@@ -5,9 +5,8 @@ An image viewer over 3rd party data sources
 This iOS app, written in Swift, is to put into practice some thoughts over the solution to a simple image viewer, comprising a search result list and an image detail view for each list item. The image view will be visiting a backend image server, either a public 3rd part one or a private one. The solution shall be extendable to more other image servers, with a minimal code change.
 
 # Image Server
+* Unsplash
 * Flickr
-* Imgur
-* (Still some other famouse provider...)
 
 # Architecture
 * MVVM is chosen in this project.

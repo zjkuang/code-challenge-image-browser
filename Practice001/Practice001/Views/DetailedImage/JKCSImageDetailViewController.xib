@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JKCSImageDetailViewController" customModule="Practice001" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JKCSImageDetailViewController" customModule="JKCSImages" customModuleProvider="target">
             <connections>
                 <outlet property="authorLabel" destination="ixu-vc-dUk" id="S2e-Ak-m3D"/>
                 <outlet property="baseView" destination="3uH-x2-xC7" id="B4V-RU-FcN"/>
@@ -31,6 +31,7 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-UT-jbt" userLabel="imageView">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                            <accessibility key="accessibilityConfiguration" identifier="imageView"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="NOI-UT-jbt" secondAttribute="height" multiplier="1:1" id="e5q-1Y-QIj"/>
                             </constraints>
@@ -41,8 +42,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ui-ee-211" userLabel="infoContainerView">
                             <rect key="frame" x="0.0" y="422" width="414" height="396"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Untitled" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-WH-oi5">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Untitled" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-WH-oi5" userLabel="titleLable">
                                     <rect key="frame" x="8" y="8" width="398" height="42"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="titleLable"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="42" id="G5B-L9-S2y"/>
                                     </constraints>
@@ -50,8 +52,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Photographer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-L7-VLx">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photographer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-L7-VLx" userLabel="authorCaptionLabel">
                                     <rect key="frame" x="8" y="58" width="88" height="16"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="authorCaptionLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="88" id="KD4-B9-tHC"/>
                                         <constraint firstAttribute="height" constant="16" id="fke-po-ee3"/>
@@ -60,8 +63,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonym" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixu-vc-dUk">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonym" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixu-vc-dUk" userLabel="authorLabel">
                                     <rect key="frame" x="104" y="58" width="302" height="16"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="authorLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="6mi-6h-GPW"/>
                                     </constraints>
@@ -69,8 +73,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apL-5w-sFx">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apL-5w-sFx" userLabel="dateCaptionLabel">
                                     <rect key="frame" x="8" y="82" width="88" height="16"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="dateCaptionLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="0xV-AO-xKO"/>
                                         <constraint firstAttribute="width" constant="88" id="LjJ-Vf-FFI"/>
@@ -79,8 +84,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-dI-3kR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy-mm-dd" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-dI-3kR" userLabel="dateLabel">
                                     <rect key="frame" x="104" y="82" width="302" height="16"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="dateLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="4Ce-3p-h6m"/>
                                     </constraints>
@@ -88,8 +94,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hk-cx-EdS">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hk-cx-EdS" userLabel="locationCaptionLabel">
                                     <rect key="frame" x="8" y="106" width="88" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="locationCaptionLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="5Ga-cK-AE2"/>
                                         <constraint firstAttribute="width" constant="88" id="TFA-jl-WCA"/>
@@ -98,8 +105,9 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somewhere" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX6-YN-M2k">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somewhere" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX6-YN-M2k" userLabel="locationLabel">
                                     <rect key="frame" x="104" y="106" width="302" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="locationLabel"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="32" id="UD1-gh-oKa"/>
                                     </constraints>
@@ -112,6 +120,7 @@
                                 </activityIndicatorView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <accessibility key="accessibilityConfiguration" identifier="infoContainerView"/>
                             <constraints>
                                 <constraint firstItem="eX6-YN-M2k" firstAttribute="top" secondItem="ddk-dI-3kR" secondAttribute="bottom" constant="8" id="1hZ-Do-wab"/>
                                 <constraint firstItem="eX6-YN-M2k" firstAttribute="leading" secondItem="3hk-cx-EdS" secondAttribute="trailing" constant="8" id="23g-ap-bRx"/>
@@ -137,8 +146,9 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <accessibility key="accessibilityConfiguration" identifier="baseView"/>
                     <constraints>
-                        <constraint firstItem="5ui-ee-211" firstAttribute="height" secondItem="3uH-x2-xC7" secondAttribute="height" multiplier="1.00763" id="39V-Sb-uMa"/>
+                        <constraint firstItem="5ui-ee-211" firstAttribute="height" secondItem="3uH-x2-xC7" secondAttribute="height" id="39V-Sb-uMa"/>
                         <constraint firstAttribute="bottom" secondItem="5ui-ee-211" secondAttribute="bottom" id="8U5-Ln-QrS"/>
                         <constraint firstItem="NOI-UT-jbt" firstAttribute="leading" secondItem="3uH-x2-xC7" secondAttribute="leading" id="PaW-I5-8wU"/>
                         <constraint firstItem="NOI-UT-jbt" firstAttribute="top" secondItem="3uH-x2-xC7" secondAttribute="top" id="Pbz-wy-JqI"/>
@@ -180,6 +190,7 @@
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="rootView"/>
             <constraints>
                 <constraint firstItem="3uH-x2-xC7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="C6O-QB-GTh"/>
                 <constraint firstItem="3uH-x2-xC7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WKx-g1-xlM"/>
