@@ -29,15 +29,27 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uH-x2-xC7" userLabel="baseView">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-UT-jbt" userLabel="imageView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6y-lo-fZ0" userLabel="imageContainerView">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
-                            <accessibility key="accessibilityConfiguration" identifier="imageView"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NOI-UT-jbt" userLabel="imageView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="imageView"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <accessibility key="accessibilityConfiguration" identifier="imageContainerView"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="NOI-UT-jbt" secondAttribute="height" multiplier="1:1" id="e5q-1Y-QIj"/>
+                                <constraint firstAttribute="width" secondItem="o6y-lo-fZ0" secondAttribute="height" multiplier="1:1" priority="999" id="C8h-CW-MbE"/>
+                                <constraint firstItem="NOI-UT-jbt" firstAttribute="leading" secondItem="o6y-lo-fZ0" secondAttribute="leading" id="S0A-jv-5te"/>
+                                <constraint firstItem="NOI-UT-jbt" firstAttribute="top" secondItem="o6y-lo-fZ0" secondAttribute="top" id="hHc-0F-lYd"/>
+                                <constraint firstAttribute="trailing" secondItem="NOI-UT-jbt" secondAttribute="trailing" id="iRj-hV-USs"/>
+                                <constraint firstAttribute="bottom" secondItem="NOI-UT-jbt" secondAttribute="bottom" id="lhT-GA-GlE"/>
                             </constraints>
-                        </imageView>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-o6-it1">
+                        </view>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-o6-it1">
                             <rect key="frame" x="197" y="197" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ui-ee-211" userLabel="infoContainerView">
                             <rect key="frame" x="0.0" y="422" width="414" height="396"/>
@@ -150,41 +162,39 @@
                     <constraints>
                         <constraint firstItem="5ui-ee-211" firstAttribute="height" secondItem="3uH-x2-xC7" secondAttribute="height" id="39V-Sb-uMa"/>
                         <constraint firstAttribute="bottom" secondItem="5ui-ee-211" secondAttribute="bottom" id="8U5-Ln-QrS"/>
-                        <constraint firstItem="NOI-UT-jbt" firstAttribute="leading" secondItem="3uH-x2-xC7" secondAttribute="leading" id="PaW-I5-8wU"/>
-                        <constraint firstItem="NOI-UT-jbt" firstAttribute="top" secondItem="3uH-x2-xC7" secondAttribute="top" id="Pbz-wy-JqI"/>
+                        <constraint firstItem="5ui-ee-211" firstAttribute="top" secondItem="o6y-lo-fZ0" secondAttribute="bottom" constant="8" id="94t-aw-Oha"/>
+                        <constraint firstItem="o6y-lo-fZ0" firstAttribute="top" secondItem="3uH-x2-xC7" secondAttribute="top" id="D0z-JD-WHq"/>
+                        <constraint firstItem="o6y-lo-fZ0" firstAttribute="width" secondItem="3uH-x2-xC7" secondAttribute="width" id="Jgw-9U-qJE"/>
                         <constraint firstAttribute="trailing" secondItem="5ui-ee-211" secondAttribute="trailing" id="Vqm-zO-bmz"/>
-                        <constraint firstItem="fXE-o6-it1" firstAttribute="centerY" secondItem="NOI-UT-jbt" secondAttribute="centerY" id="brG-bA-ROb"/>
-                        <constraint firstItem="NOI-UT-jbt" firstAttribute="height" secondItem="3uH-x2-xC7" secondAttribute="height" id="eda-21-yDB"/>
-                        <constraint firstItem="5ui-ee-211" firstAttribute="leading" secondItem="NOI-UT-jbt" secondAttribute="trailing" constant="29" id="hld-gA-51k">
+                        <constraint firstItem="5ui-ee-211" firstAttribute="leading" secondItem="o6y-lo-fZ0" secondAttribute="trailing" constant="203.5" id="ZR7-RS-rqg">
                             <variation key="heightClass=compact-widthClass=regular" constant="8"/>
                         </constraint>
-                        <constraint firstItem="fXE-o6-it1" firstAttribute="centerX" secondItem="NOI-UT-jbt" secondAttribute="centerX" id="nnW-UW-jJc"/>
+                        <constraint firstItem="o6y-lo-fZ0" firstAttribute="height" secondItem="3uH-x2-xC7" secondAttribute="height" id="kc8-Qd-ehU"/>
+                        <constraint firstItem="o6y-lo-fZ0" firstAttribute="leading" secondItem="3uH-x2-xC7" secondAttribute="leading" id="pS5-vJ-uvV"/>
                         <constraint firstItem="5ui-ee-211" firstAttribute="width" secondItem="3uH-x2-xC7" secondAttribute="width" id="ugT-Yn-4cY"/>
-                        <constraint firstItem="NOI-UT-jbt" firstAttribute="width" secondItem="3uH-x2-xC7" secondAttribute="width" id="zAk-zn-SCw"/>
-                        <constraint firstItem="5ui-ee-211" firstAttribute="top" secondItem="NOI-UT-jbt" secondAttribute="bottom" constant="8" id="zTF-M0-Ahr"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="eda-21-yDB"/>
-                            <exclude reference="zAk-zn-SCw"/>
+                            <exclude reference="Jgw-9U-qJE"/>
+                            <exclude reference="kc8-Qd-ehU"/>
                             <exclude reference="39V-Sb-uMa"/>
-                            <exclude reference="hld-gA-51k"/>
+                            <exclude reference="94t-aw-Oha"/>
+                            <exclude reference="ZR7-RS-rqg"/>
                             <exclude reference="ugT-Yn-4cY"/>
-                            <exclude reference="zTF-M0-Ahr"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=compact-widthClass=regular">
                         <mask key="constraints">
-                            <include reference="eda-21-yDB"/>
+                            <include reference="kc8-Qd-ehU"/>
                             <include reference="39V-Sb-uMa"/>
-                            <include reference="hld-gA-51k"/>
+                            <include reference="ZR7-RS-rqg"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
-                            <include reference="zAk-zn-SCw"/>
+                            <include reference="Jgw-9U-qJE"/>
+                            <include reference="94t-aw-Oha"/>
                             <include reference="ugT-Yn-4cY"/>
-                            <include reference="zTF-M0-Ahr"/>
                         </mask>
                     </variation>
                 </view>
