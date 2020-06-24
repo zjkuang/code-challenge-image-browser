@@ -669,7 +669,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSImageServiceSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.11;
+				minimumVersion = 1.0.20;
 			};
 		};
 		52458EDC2495328500931728 /* XCRemoteSwiftPackageReference "JKCSSwift" */ = {
@@ -677,7 +677,7 @@
 			repositoryURL = "https://github.com/zjkuang/JKCSSwift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.8;
+				minimumVersion = 1.0.14;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
