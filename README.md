@@ -18,7 +18,7 @@ This iOS app, written in Swift, is to put into practice some thoughts over the s
 
 ![](https://github.com/zjkuang/Practice001/blob/master/FlowChart_MVVM.png)
 ## UX Thoughts
-* Image caching - A "Cachable" protocol is developed so that any class or struct comforming to Cachable will automatically obtain cachability. In this project, (1) the thumbnail image, (2) detailed image, and (3) image info are all fetched from backend separately, therefore these three parts are all cached for a better UX.
+* Image caching - A "Cacheable" protocol is developed so that any class or struct comforming to Cachable will automatically obtain cachability. In this project, (1) the thumbnail image, (2) detailed image, and (3) image info are all fetched from backend separately, therefore these three parts are all cached for a better UX.
 * Paged loading - Scroll the list to bottom will automatically trigger the loading of next page.
 
 ## Output
