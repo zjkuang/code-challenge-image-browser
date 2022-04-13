@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "JKCSImageServiceSwift",
-        "repositoryURL": "https://github.com/zjkuang/JKCSImageServiceSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "9b4df3b5b63f525d1c1699230008c2096056227a",
-          "version": "1.0.20"
-        }
-      },
-      {
-        "package": "JKCSSwift",
-        "repositoryURL": "https://github.com/zjkuang/JKCSSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "a1f82d468e79ede0477091c7d1b3b26be729c504",
-          "version": "1.0.14"
-        }
+  "pins" : [
+    {
+      "identity" : "jkcsimageserviceswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zjkuang/JKCSImageServiceSwift.git",
+      "state" : {
+        "revision" : "9b4df3b5b63f525d1c1699230008c2096056227a",
+        "version" : "1.0.20"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "jkcsswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zjkuang/JKCSSwift.git",
+      "state" : {
+        "revision" : "a1f82d468e79ede0477091c7d1b3b26be729c504",
+        "version" : "1.0.14"
+      }
+    }
+  ],
+  "version" : 2
 }
